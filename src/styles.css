@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --pri-font-family: sans-serif;
+  --sec-font-family: monospace;
+}
+
+body {
+  font-family: var(--pri-font-family);
+  padding: 0 20px;
+}
+
+h1 {
+  font-weight: 900;
+  margin: 0;
+  font-size: 58px;
+  line-height: 78px;
+}
+
+h1 h2,
+h3 {
+  color: #231d3c;
+}
+
+.Intro {
+  margin-top: 150px;
+}
+.navigation-links {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 40px;
+  justify-content: center;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.primary-link:hover {
+  background: var(--primary-color);
+  color: #231d3c;
+  opacity: 0.9;
+  transition: all 200ms ease;
+}
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.secondary-link:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transition: all 200ms ease;
+}
+.yoga-photo {
+  background: var(--secondary-color);
+}
+.launch-app-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.launch-app-link:hover {
+  color: #231d3c;
+  opacity: 0.9;
+  transition: all 200ms ease;
+}
+.about-heading {
+  text-align: center;
+  margin: 100px auto 20px;
+}
+.about-paragraphs {
+  font-size: 20px;
+  font-family: var(--sec-font-family);
+  line-height: 38px;
+}
+.email-link {
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .launch-app-link {
+    display: flex;
+    justify-content: center;
+  }
+}
