@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: var(--pri-font-family);
+  font-family: var(--sec-font-family);
   padding: 0 20px;
 }
 
@@ -16,6 +16,7 @@ h1 {
   margin: 0;
   font-size: 58px;
   line-height: 78px;
+  font-family: var(--sec-font-family);
 }
 
 h1 h2,
@@ -60,6 +61,11 @@ h3 {
   color: #fff;
   transition: all 200ms ease;
 }
+.project-text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+}
 .yoga-photo {
   background: var(--secondary-color);
 }
@@ -80,6 +86,7 @@ h3 {
 .about-heading {
   text-align: center;
   margin: 100px auto 20px;
+  font-family: var(--sec-font-family);
 }
 .about-paragraphs {
   font-size: 20px;
@@ -93,7 +100,7 @@ h3 {
 
 @media (max-width: 576px) {
   .launch-app-link {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
   }
 }
